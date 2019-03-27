@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/app-tabber/app-tabber",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	    ,{
+            "path" : "pages/app-tabber/index_1",
+            "style" : {
+				"navigationBarTitleText": "发现"
+			}
+        },
+		{
+		    "path" : "pages/app-tabber/index_2",
+		    "style" : {
+				"navigationBarTitleText": "发布"
+			}
+		},
+		{
+		    "path" : "pages/app-tabber/index_3",
+		    "style" : {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+		    "path" : "pages/app-tabber/index_4",
+		    "style" : {
+				"navigationBarTitleText": "我的"
+			}
+		}
+        ,{
+            "path" : "pages/index_page/index_page",
+            "style" : {
+				"navigationBarTitleText": "二级页面隐藏图标"
+			}
+        }
+    ],
+	"tabBar" : {
+	    "color" : "#7a7e83",
+	    "selectedColor" : "#FFD305",
+	    "backgroundColor" : "#ffffff",
+	    "borderStyle" : "block",
+	    "list" : [
+	        {
+	            "pagePath" : "pages/app-tabber/app-tabber",
+	            "text" : "首页",
+	            "iconPath" : "static/tab_icon_2.png",
+	            "selectedIconPath" : "static/tab_icon_1.png"
+	        },
+	        {
+	            "pagePath" : "pages/app-tabber/index_1",
+	            "text" : "发现",
+	            "iconPath" : "static/tab_icon_4.png",
+	            "selectedIconPath" : "static/tab_icon_3.png"
+	        },
+	        {
+	            "pagePath" : "pages/hanguangchuan-tabber/index_2",
+	            "text" : "发布",
+	            "iconPath" : "static/tab_icon_5_5.png",
+	            "selectedIconPath" : "static/tab_icon_5_5.png.png"
+	        },
+	        {
+	            "pagePath" : "pages/app-tabber/index_3",
+	            "text" : "消息",
+	            "iconPath" : "static/tab_icon_7.png",
+	            "selectedIconPath" : "static/tab_icon_6.png"
+	        },
+	        {
+	            "pagePath" : "pages/app-tabber/index_4",
+	            "text" : "我的",
+	            "iconPath" : "static/tab_icon_9.png",
+	            "selectedIconPath" : "static/tab_icon_8.png"
+	        }
+	    ]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
