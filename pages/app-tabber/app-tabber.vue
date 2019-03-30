@@ -22,7 +22,7 @@
 		},
 		onLoad() {
 			bitmap = new plus.nativeObj.Bitmap('bmp1');
-			bitmap.load('static/tab_icon_5.png', function() {}, function(e) {});
+			bitmap.load('static/app-tabber/app-tabber.png', function() {}, function(e) {});
 			this.createtab();
 		},
 		methods: {
@@ -38,8 +38,7 @@
 				view.drawBitmap(bitmap, {
 					tag: 'font',
 					id: 'icon',
-					//text: '\ue510', //此为字体图标Unicode码'\e600'转换为'\ue600'
-					src: '/static/tab_icon_5.png',
+					src: '/static/app-tabber/app-tabber.png',
 					position: {
 						top: '0px',
 						left: '5px',
@@ -48,9 +47,6 @@
 					}
 				});
 				view.addEventListener("click", function(e) {
-					// 					uni.navigateTo({
-					// 						url: '../login/login'  这里是点击中间按钮直接打开新的页面
-					// 					});
 					uni.switchTab({
 						url: '/pages/app-tabber/index_2'
 					})
